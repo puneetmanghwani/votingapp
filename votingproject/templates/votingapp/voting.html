@@ -1,0 +1,21 @@
+{% extends "votingapp/base.html" %}
+{% block body_block %}
+<div class="container">
+<div class="jumbotron">
+    <form method="POST">
+        {% csrf_token %}
+        <h2>FIRST ITEM</h2><input type="submit" name="action" value="VoteFirst"/>
+        <h2>SECOND ITEM</h2><input type="submit" name="action" value="VoteSecond"/>
+        <h2>THRID ITEM</h2><input type="submit" name="action" value="VoteThird"/>
+        <h2>FOURTH ITEM</h2><input type="submit" name="action" value="VoteFourth"/>
+        <h2>FIFTH ITEM</h2><input type="submit" name="action" value="VoteFifth"/>
+    </form>
+</div>
+</div>
+{% endblock %}
+
+<!-- <h2>FIRST ITEM</h2><button name="first" type="submit" formmethod="post">Vote</button>
+        <h2>SECOND ITEM</h2><button name="second" type="submit" formmethod="post">Vote</button>
+        <h2>THRID ITEM</h2><button name="third" type="submit" formmethod="post">Vote</button>
+        <h2>FOURTH ITEM</h2><button name="fourth" type="submit" formmethod="post">Vote</button>
+        <h2>FIFTH ITEM</h2><button name="fifth" type="submit" formmethod="post">Vote</button> -->
